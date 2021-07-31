@@ -58,12 +58,11 @@ if(array_key_exists($code, $fileArray)){
     }
 }
 
-if($isVideoExists == false){
+if(!$isVideoExists){
     $output = shell_exec('find '.DATA_PATH.' -type f -iname "*'.$code.'*"');
-    if(strlen(str_replace("\n", '', $output)) > 0){
-        $array = explode("\n", $output);
+    if(count($array = explode("\n", $output)) > 0 && $filteredArray = preg_grep('/.*\.(?!jpg|jpeg|gif|png|bmp|nfo)/i', $array) ){
         $isVideoExists = true;
-        $fileArray[$code] = $array;
+        $fileArray[$code] = $filteredArray;
         writeCache(CACHE_FILE, json_encode(($fileArray)));
     }
     else if(array_key_exists($code, $fileArray)){

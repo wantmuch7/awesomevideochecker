@@ -7,5 +7,5 @@ docker run -d ^
 -p 54320:80 ^
 --name=awesomevideochecker ^
 --restart always ^
-wantmuch7/awesomevideochecker:v1.0.2
+wantmuch7/awesomevideochecker:v1.0.3
 pause

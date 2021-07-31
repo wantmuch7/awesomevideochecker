@@ -11,5 +11,5 @@ docker run -d ^
 -it ^
 --cap-add ^
 SYS_ADMIN --cap-add DAC_READ_SEARCH ^
-wantmuch7/awesomevideochecker:v1.0.2 bash
+wantmuch7/awesomevideochecker:v1.0.3 bash
 pause
