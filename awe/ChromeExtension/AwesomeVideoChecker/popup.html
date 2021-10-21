@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      iframe{
+        width: 300px;
+        height: 100px;
+      }
+      label{
+        width: 100%;
+        display: block;
+        font-weight: bold;
+        text-align: center;
+      }
+      input{
+        width: 100%;
+        margin: 5px 0;
+        font-size: 15px;
+        box-sizing: border-box;
+        border: 1px solid lightskyblue;
+        display: block;
+      }
+      input[type=button]{
+        cursor: pointer;
+      }
+      .message{
+        color: green;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="main-body">
+	  <img src="images/icon128.png" alt="logo" />
+    <label for="api-link">Docker API Link</label>
+    <input type="text" id="api-link" placeholder="127.0.0.1:54320" value=""/>
+    <input type="button" id="api-link-save-button" value="Save" />
+    <input type="button" id="delete-cache-button" value="Delete Cache" />
+    <div id="message" class="message"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
