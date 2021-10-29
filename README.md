@@ -22,12 +22,12 @@
 
 **Bitcoin - BTC recipient's address**
 
-> bc1q3mzpwumdu4l6l87u29s5ry25jusxz8m46v9gg7
+> 13CFkDNRBAvVD4jT9EFwKdUQxdhd9cSRdZ
 
 ![](https://github.com/wantmuch7/awesomevideochecker/blob/master/donated_me_by_bitcoin.png)
 
 **Dogecoin - DOGE recipient's address**
 
-> DQ8yepyMksdc2p7SSqx7mbBRNyyad2gvNa
+> DE8M7DqxKB4mRoSKxXtT5B5o8T4rVSGfFt
 
 ![](https://github.com/wantmuch7/awesomevideochecker/blob/master/donated_me_by_dogecoin.png)
