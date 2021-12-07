@@ -7,7 +7,7 @@ let message = document.getElementById("message");
 const loadApiLink = function(){
     var apiValue = localStorage.getItem("awesomevideochecker-docker-api-link");
     if( apiValue == undefined || apiValue == ""){
-        tbApliLink.value = "127.0.0.1:54320";
+        tbApliLink.value = "127.0.0.1:22333";
         localStorage.setItem("awesomevideochecker-docker-api-link", tbApliLink.value);
         apiValue = tbApliLink.value;
     }

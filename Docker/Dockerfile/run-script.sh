@@ -12,7 +12,8 @@ if [ "$ENV_AWE_USERNAME" != "" ] && [ "$ENV_AWE_PASSWORD" != "" ];then
 fi
 
 if [ "$ENV_AWE_SHARE_PATH" != "" ] && [ "$ENV_AWE_SHARE_USERNAME" != "" ] && [ "$ENV_AWE_SHARE_PASSWORD" != "" ];then
-mount -t cifs -o username=$ENV_AWE_SHARE_USERNAME,password=$ENV_AWE_SHARE_PASSWORD,iocharset=utf8 "$ENV_AWE_SHARE_PATH" /var/www/html/collection/data
+result=${ENV_AWE_SHARE_PATH//\\/\/}
+mount -t cifs -o username=$ENV_AWE_SHARE_USERNAME,password=$ENV_AWE_SHARE_PASSWORD,iocharset=utf8 "$result" /var/www/html/collection/data/nas
 fi
 
 echo "Restart apache"

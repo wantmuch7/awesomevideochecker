@@ -4,7 +4,7 @@ docker run -d ^
 -e ENV_AWE_SHARE_PASSWORD="Your Share Drive Password" ^
 -e ENV_AWE_USERNAME=admin ^
 -e ENV_AWE_PASSWORD=admin ^
--p 54320:80 ^
+-p 22333:80 ^
 --name=awesomevideochecker ^
 --restart always ^
 --privileged ^
