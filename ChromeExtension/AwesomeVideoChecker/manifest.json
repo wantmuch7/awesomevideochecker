@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
 
     "name": "AwesomeVideoChecker",
     "short_name": "AweVideo",
@@ -25,7 +25,7 @@
             "run_at": "document_idle"
         }
     ],
-    "browser_action": {
+    "action": {
       "default_popup": "popup.html",
       "default_icon": {
         "16":  "images/icon16.png",
